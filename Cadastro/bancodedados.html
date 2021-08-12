@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <cfoutput>
+        <head>
+            <title>Primeira consulta ao banco de dados</title>
+            <meta charset="utf-8">
+        </head>
+    
+        <body>
+            Consulta ao banco de dados
+            <cfquery datasource = "teste" name = "qteste">
+                select nome, email from cliente
+            </cfquery>
+
+            <cfdump  var="qteste">    
+    
+        </body>
+    </cfoutput>
+</html>
